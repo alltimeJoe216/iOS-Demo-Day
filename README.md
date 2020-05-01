@@ -19,43 +19,60 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: "Binge It, Baby"
+* Team: N/A
+* Github Code: https://github.com/alltimeJoe216/BingItBaby.git
+* Github Proposal: https://trello.com/b/htD2270d/binge-it-baby
+* Trello/Github Project Kanban: n/a
+* Test Flight Signup (Recommended): n/a
+* YouTube demo video (Recommended): n/a
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Implementing the carousel affect was a lot of fun! 
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    Realizing data can't be transfered via delegates when using tab bars was a huge bummer and 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+      let movieCell = homePageController?.movieList[indexPath.row]
+           
+            cell.movieList = movieCell
+            cell.backgroundColor = .clear
+            cell.contentView.layer.cornerRadius = 10
+            cell.contentView.layer.borderWidth = 1.0
+            cell.contentView.layer.borderColor = UIColor.black.cgColor
+            cell.contentView.layer.masksToBounds = true;
+            cell.layer.shadowColor = UIColor.purple.cgColor
+            cell.layer.isOpaque = true
+            cell.layer.shadowOffset = CGSize(width: 0, height: 0.0)
+            cell.layer.shadowRadius = 10.0
+            cell.layer.shadowOpacity = 1.0
+            cell.layer.masksToBounds = true
+
+            return cell
+            
+     This chunk of code was special to me because it was the first time I created a custom cell outside of class. Found some really neat properties to mess around with!
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    Are you sick of wasting time flicking through Netflix looking for something worthy to watch? Tired of having your boo over for Netflix and Chill and it ends up being just scroll through Netflix and chill? Binge It, Baby solves all your excess scrolling needs. Featuring thousands of movies (actually like 12), you can scroll through the app one time in the morning, add movies to your watchlist and come back later on when it's time to binge your favorite movies! 
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Carousel Collection View
   
 6. What are you future goals?
 
-    `<Your answer here>`
+        It would be cool to be able to connect to your other streaming apps to actually watch the movie. 
 
 ## Required Slides (Add your Keynote to your PR)
 
